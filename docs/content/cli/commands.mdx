@@ -251,7 +251,7 @@ If `npx learnhouse update` reports a migration failure:
 npx learnhouse restore backups/db-pre-upgrade-*.sql.gz
 
 # 2. Revert the image tag in docker-compose.yml to the previous version
-# (open the file and change image: ghcr.io/learnhouse/app:<new> back to <old>)
+# (open the file and change image: ghcr.io/learnhouse/app:latest back to <old>)
 
 # 3. Restart on the old image
 npx learnhouse start
