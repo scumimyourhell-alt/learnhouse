@@ -95,7 +95,7 @@ ls {installDir}/backups/
 npx learnhouse restore backups/db-pre-upgrade-<timestamp>.sql.gz
 
 # Revert the image tag in docker-compose.yml to the previous version
-# (edit the file: change image: ghcr.io/learnhouse/app:<new> back to <old>)
+# (edit the file: change image: ghcr.io/learnhouse/app:latest back to <old>)
 
 # Restart on the old image
 npx learnhouse start
