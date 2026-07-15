@@ -667,7 +667,7 @@ describe('update — image tag replacement in docker-compose.yml', () => {
   })
 
   it('handles dev channel tag', () => {
-    const compose = 'image: ghcr.io/learnhouse/app:dev'
+    const compose = 'image: ghcr.io/scumimyourhell-alt/learnhouse:dev'
     expect(replaceComposeImageTag(compose, 'ghcr.io/learnhouse/app:1.3.0')).toBe(
       'image: ghcr.io/learnhouse/app:1.3.0',
     )
